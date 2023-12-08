@@ -1,0 +1,29 @@
+#88. Merge Sorted Array
+
+#IDE version
+class Solution(object):
+
+  def merge(self, nums1, m, nums2, n):
+    del nums1[m:]
+    nums1.extend(nums2)
+    nums1.sort()
+    print(nums1)
+
+
+#solution 1
+sol1 = Solution()
+nums1 = [1, 2, 3, 0, 0, 0]
+m = 3
+nums2 = [2, 5, 6]
+n = 3
+sol1.merge(nums1, m, nums2, n)
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+#leetcode version
+class Solution(object):
+    def merge(self, nums1, m, nums2, n):
+        del nums1[m:]
+        nums1.extend(nums2)
+        nums1.sort()
+
